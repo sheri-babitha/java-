@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+
+class loops_hack{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            int series =a;
+            for(int j=0;j<n;j++){
+                // int series =a;
+                series += Math.pow(2,j)*b;
+                System.out.print(series +" ");
+            }
+            System.out.println(" ");
+        }
+        in.close();
+        //System.out.println("\n");
+
+    }
+}
